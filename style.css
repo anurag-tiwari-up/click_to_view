@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+}
+
+.box{
+    height: 60vh;
+    width: 80vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+.box img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.diss{
+    margin-top: 5px;
+    height: 70vh;
+    width: 80vh;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+#close{
+    position: absolute;
+    opacity: 0;
+    left: 67vw;
+    top: 15vh;
+    z-index: 3;
+    font-size: 40px;
+    color: red;
+}
